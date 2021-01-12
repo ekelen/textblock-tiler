@@ -5,8 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>textblock-tiler</title>
     <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
   </head>
   <body>
-    <main><h1>textblock-tiler</h1></main>
+    <main>
+      <h1>textblock-tiler</h1>
+      <form id="form__id">
+        <fieldset id="preset-fieldset__id">
+          <legend>Use sample input:</legend>
+          <ul>
+            <li>
+              <label for="preset-none__id">None</label>
+              <input
+                type="radio"
+                id="preset-none__id"
+                name="sample-input"
+                value=""
+                checked
+              />
+            </li>
+            <li>
+              <label for="preset-lyrics__id"
+                >All Among the Barley (Lyrics)</label
+              >
+              <input
+                type="radio"
+                id="preset-lyrics__id"
+                name="sample-input"
+                value="{{lyrics}}"
+              />
+            </li>
+            <li>
+              <label for="preset-recipe__id"
+                >Vegan Linzer Cookies (Recipe)</label
+              >
+              <input
+                type="radio"
+                id="preset-recipe__id"
+                name="sample-input"
+                value="{{recipe}}"
+              />
+            </li>
+            <li>
+              <label for="preset-species__id">Swamp Spruce (Species)</label>
+              <input
+                type="radio"
+                id="preset-species__id"
+                name="sample-input"
+                value="{{species}}"
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <label for="textarea__id"></label>
+        <textarea
+          required
+          id="textarea__id"
+          name="raw-text"
+          rows="15"
+          cols="30"
+          placeholder="Type or paste some paragraphs, each seperated by an empty line."
+          value=""
+          maxlength="10000"
+          autofocus
+        ></textarea>
+
+        <button type="submit" id="submit-btn__id">Submit</button>
+      </form>
+    </main>
   </body>
 </html>
