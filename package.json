@@ -1,0 +1,16 @@
+{
+  "name": "textblock-tiler",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "ekelen",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "eleventy --serve",
+    "ntldev": "ntl dev",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
