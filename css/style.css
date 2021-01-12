@@ -59,3 +59,52 @@ main {
   align-self: center;
   border: 3px double hsl(0, 0%, 20%);
 }
+
+/* TILED PARAGRAPH STYLES */
+
+#display-container__id {
+  align-content: flex-start;
+  display: none;
+  flex-flow: column wrap;
+  flex: 1;
+  height: 95vh;
+  max-height: 99vh;
+  padding: 1rem;
+}
+
+#display-btns__id {
+  position: fixed;
+  top: 0.75rem;
+  left: 1rem;
+}
+
+#back-btn__id,
+#view-btn__id {
+  background-color: hsla(0, 0%, 0%, 0);
+  border: 3px double hsl(0, 0%, 80%);
+}
+
+#submit-btn__id,
+#back-btn__id,
+#view-btn__id {
+  font-size: large;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  cursor: pointer;
+  width: min-content;
+  white-space: pre;
+  box-shadow: 0 4px 12px 2px rgba(171, 174, 209, 0.4);
+  text-transform: capitalize;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  z-index: 10;
+}
+
+#view-btn__id::after {
+  content: "reading mode";
+}
+
+#back-btn__id::after {
+  content: "⬅ BACK";
+}
