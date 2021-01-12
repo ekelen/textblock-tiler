@@ -1,0 +1,61 @@
+/* GLOBAL STYLES */
+
+body,
+pre,
+button,
+textarea {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: hsl(0, 0%, 26.3%);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  align-items: center;
+}
+
+/* FORM STYLES */
+
+#form__id {
+  width: 100%;
+  max-width: 768px;
+  display: flex;
+  flex-flow: column;
+  margin: 1rem auto;
+  flex: 1;
+}
+
+#textarea__id {
+  overflow-y: scroll;
+  padding: 0rem 0.75rem;
+  font-weight: 200;
+  min-height: 200px;
+  max-height: 40vh;
+}
+
+#preset-fieldset__id,
+#textarea__id,
+#btn-submit__id {
+  margin-bottom: 1.5rem;
+}
+
+#submit-btn__id {
+  font-size: large;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  cursor: pointer;
+  width: min-content;
+  white-space: pre;
+  box-shadow: 0 4px 12px 2px rgba(171, 174, 209, 0.4);
+  text-transform: capitalize;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  z-index: 10;
+}
+
+#submit-btn__id {
+  align-self: center;
+  border: 3px double hsl(0, 0%, 20%);
+}
