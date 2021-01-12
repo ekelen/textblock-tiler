@@ -17,6 +17,14 @@ main {
 
 /* FORM STYLES */
 
+#form-wrapper__id {
+  display: flex;
+
+  width: 100%;
+  justify-content: center;
+  border: 1px solid red;
+}
+
 #form__id {
   width: 100%;
   max-width: 768px;
@@ -40,14 +48,16 @@ main {
   margin-bottom: 1.5rem;
 }
 
-#submit-btn__id {
+#submit-btn__id,
+#back-btn__id,
+#view-btn__id {
   font-size: large;
   border: none;
   border-radius: 0.25rem;
   padding: 1rem;
   cursor: pointer;
   width: min-content;
-  white-space: pre;
+  white-space: nowrap;
   box-shadow: 0 4px 12px 2px rgba(171, 174, 209, 0.4);
   text-transform: capitalize;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -60,11 +70,12 @@ main {
   border: 3px double hsl(0, 0%, 20%);
 }
 
-/* TILED PARAGRAPH STYLES */
+/* TILED TEXT DISPLAY STYLES */
 
 #display-container__id {
-  align-content: flex-start;
   display: none;
+
+  align-content: flex-start;
   flex-flow: column wrap;
   flex: 1;
   height: 95vh;
@@ -78,27 +89,9 @@ main {
   left: 1rem;
 }
 
-#back-btn__id,
-#view-btn__id {
+#display-btns__id > button {
   background-color: hsla(0, 0%, 0%, 0);
   border: 3px double hsl(0, 0%, 80%);
-}
-
-#submit-btn__id,
-#back-btn__id,
-#view-btn__id {
-  font-size: large;
-  border: none;
-  border-radius: 0.25rem;
-  padding: 1rem;
-  cursor: pointer;
-  width: min-content;
-  white-space: pre;
-  box-shadow: 0 4px 12px 2px rgba(171, 174, 209, 0.4);
-  text-transform: capitalize;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 600;
-  z-index: 10;
 }
 
 #view-btn__id::after {
@@ -106,5 +99,26 @@ main {
 }
 
 #back-btn__id::after {
-  content: "⬅ BACK";
+  content: "⬅ BACK (Shift + B)";
+}
+
+.par-container__class {
+  background-color: hsl(0, 0%, 95%);
+  margin: 0.75rem 1rem 0.5rem 0.5rem;
+  padding: 0.75rem;
+  position: relative;
+  width: min-content;
+}
+
+.par-container__class:nth-of-type(2) {
+  margin-top: 6rem;
+}
+
+.par-text__class {
+  width: 40%;
+  min-width: 300px;
+  white-space: pre-line;
+
+  margin-top: 1rem;
+  position: relative;
 }
