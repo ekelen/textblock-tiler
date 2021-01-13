@@ -20,6 +20,15 @@ displayEl
   .querySelector("#back-btn__id")
   .addEventListener("click", handleGoBack);
 
+const handleViewClick = (e) => {
+  displayEl.classList.toggle("reading-mode");
+  document.querySelector("#view-btn__id").classList.toggle("reading-mode");
+};
+
+displayEl
+  .querySelector("#view-btn__id")
+  .addEventListener("click", handleViewClick);
+
 /**
  * Paragraphs
  */
@@ -84,8 +93,6 @@ const handleSubmit = (event) => {
 
         paragraphDocFrag.id = paragraphId;
         displayEl.appendChild(paragraphDocFrag);
-
-        // todo: collapse by default if block is very long
 
         // Get the actual DOM node now that we have attached it
         const paragraphEl = displayEl.querySelector(`#${paragraphId}`);
