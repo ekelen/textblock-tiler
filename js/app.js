@@ -8,6 +8,9 @@ const displayEl = document.querySelector("#display-container__id");
  */
 
 const handleGoBack = () => {
+  if (window.localStorage.getItem("input")) {
+    return;
+  }
   formWrapperEl.style.display = "flex";
   displayEl.style.display = "none";
 
@@ -36,6 +39,79 @@ displayEl
 const toggleCollapse = (paragraphEl) => (_) => {
   paragraphEl && paragraphEl.classList.toggle("collapsed");
 };
+
+/**
+ * Format paragraphs
+ */
+
+let fontRem = 1;
+let colWidthPercent = 40;
+let colMinWidthPx = 300;
+
+// FONT
+document
+  .querySelector("#btn-font-size-inc__id")
+  .addEventListener("click", () => {
+    fontRem *= parseFloat(1.15);
+    Array.from(displayEl.querySelectorAll(".par-line__class")).forEach(
+      (line) => {
+        line.style.fontSize = `${fontRem}rem`;
+      }
+    );
+  });
+
+document
+  .querySelector("#btn-font-size-dec__id")
+  .addEventListener("click", () => {
+    fontRem *= parseFloat(0.9);
+    Array.from(displayEl.querySelectorAll(".par-line__class")).forEach(
+      (line) => {
+        line.style.fontSize = `${fontRem}rem`;
+      }
+    );
+  });
+
+// COL WIDTH
+document.querySelector("#btn-w-cols-inc__id").addEventListener("click", () => {
+  colWidthPercent *= parseFloat(1.2);
+  Array.from(displayEl.querySelectorAll(".par-container__class")).forEach(
+    (container) => {
+      container.style.width = `${colWidthPercent}%`;
+    }
+  );
+});
+
+document.querySelector("#btn-w-cols-dec__id").addEventListener("click", () => {
+  colWidthPercent *= parseFloat(0.9);
+  Array.from(displayEl.querySelectorAll(".par-container__class")).forEach(
+    (container) => {
+      container.style.width = `${colWidthPercent}%`;
+    }
+  );
+});
+
+// COL MIN WIDTH
+document
+  .querySelector("#btn-minw-cols-inc__id")
+  .addEventListener("click", () => {
+    colMinWidthPx += 25;
+    Array.from(displayEl.querySelectorAll(".par-container__class")).forEach(
+      (container) => {
+        container.style.minWidth = `${colMinWidthPx}px`;
+      }
+    );
+  });
+
+document
+  .querySelector("#btn-minw-cols-dec__id")
+  .addEventListener("click", () => {
+    colMinWidthPx -= 25;
+    Array.from(displayEl.querySelectorAll(".par-container__class")).forEach(
+      (container) => {
+        container.style.minWidth = `${colMinWidthPx}px`;
+      }
+    );
+  });
 
 /**
  * Form
@@ -101,6 +177,7 @@ const handleSubmit = (event) => {
           .querySelector(".collapse-btn__class")
           .addEventListener("click", toggleCollapse(paragraphEl));
       });
+  window.localStorage.setItem("input", input);
 };
 
 const submitOnEnter = (event) => {
