@@ -47,7 +47,37 @@ layout: default.liquid
               value="{{species}}"
 />
         </li>
+        <li>
+          <label for="preset_long_lyrics__id">The House Carpenter (Long lyrics)</label>
+          <input
+              type="radio"
+              id="preset_long_lyrics__id"
+              name="sample-input"
+              value="{{house_carpenter}}"
+              checked
+/>
+        </li>
+        <li>
+          <label for="preset_short_lyrics__id">Leave Her, Johnny (Short lyrics)</label>
+          <input
+              type="radio"
+              id="preset_short_lyrics__id"
+              name="sample-input"
+              value="{{leave_her_johnny}}"
+/>
+        </li>
+        <li>
+          <label for="preset_wide_lyrics__id">All Among the Barley (Wide lyrics)</label>
+          <input
+              type="radio"
+              id="preset_wide_lyrics__id"
+              name="sample-input"
+              value="{{all_among_the_barley}}"
+              checked
+/>
+        </li>
       </ul>
+
     </fieldset>
     <label for="textarea__id"></label>
     <textarea
@@ -60,7 +90,7 @@ layout: default.liquid
         value=""
         maxlength="10000"
         autofocus
-      >{{ lyrics }}</textarea>
+      >{{ all_among_the_barley }}</textarea>
     <button type="submit" id="submit-btn__id">Submit (ctrl + Enter)</button>
   </form>
 </div>
