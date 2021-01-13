@@ -23,7 +23,7 @@
   <body>
     <main>
       
-<!-- Input form -->
+
 <div id="form-wrapper__id" tabindex="0">
   <form id="form__id">
     <h1>text-tiler</h1>
@@ -37,7 +37,7 @@
               id="preset-none__id"
               name="sample-input"
               value=""
-              checked
+
 />
         </li>
         <li>
@@ -71,6 +71,7 @@ Now is come September, the hunter&#39;s moon begun
 And through the wheaten stubble is heard the frequent gun
 The leaves are pale and yellow, and kindling into red
 And the ripe and bearded barley is hanging down its head"
+              checked
 />
         </li>
         <li>
@@ -221,24 +222,51 @@ http://www.pgdp.net"
         value=""
         maxlength="10000"
         autofocus
-      ></textarea>
+      >
+ALL AMONG THE BARLEY
 
+Now is come September, the hunter&#39;s moon begun
+And through the wheaten stubble is heard the frequent gun
+The leaves are pale and yellow, and kindling into red
+And the ripe and bearded barley is hanging down its head
+
+All among the barley, who would not be blithe
+When the ripe and bearded barley is smiling on the scythe
+
+The spring is like a young man who does not know his mind
+The summer is a tyrant of most ungracious kind
+The autumn&#39;s like an old friend, who loves one all she can
+And she brings the bearded barley to glad the heart of man
+
+The wheat is like a rich man, it&#39;s sleek and well-to-do
+The oats are like a pack of girls, laughing and dancing too
+The rye is like a miser, it&#39;s sulky, lean, and small
+And the ripe and bearded barley is monarch of them all
+
+Now is come September, the hunter&#39;s moon begun
+And through the wheaten stubble is heard the frequent gun
+The leaves are pale and yellow, and kindling into red
+And the ripe and bearded barley is hanging down its head</textarea>
     <button type="submit" id="submit-btn__id">Submit (ctrl + Enter)</button>
   </form>
 </div>
 
-<!-- Display paragraphs -->
+
 <div id="display-container__id" tabindex="0">
   <div id="display-btns__id">
     <button id="back-btn__id"></button>
     <button id="view-btn__id"></button>
   </div>
 </div>
-</main>
+
+
 <template id="par-template__id">
-<div class="par-container__class">
-  <pre class="par-text__class"></pre>
-</div>
+  <div class="par-container__class">
+    <button class="collapse-btn__class"></button>
+    <div class="par-lines-wrapper__class">
+      
+    </div>
+  </div>
 </template>
 
 <script src="/textblock-tiler/js/app.js" type="text/javascript"></script>

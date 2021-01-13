@@ -77,7 +77,7 @@ const handleSubmit = (event) => {
           .querySelector(".par-container__class");
 
         paragraphDocFrag.querySelector(
-          ".par-text__class"
+          ".par-lines-wrapper__class"
         ).innerHTML = paragraphLines;
 
         const paragraphId = `paragraph-${i}__id`;

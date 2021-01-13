@@ -3,13 +3,16 @@ const formEl = document.querySelector("#form__id");
 const textareaEl = formEl.querySelector("#textarea__id");
 const displayEl = document.querySelector("#display-container__id");
 
+/**
+ * Display area
+ */
+
 const handleGoBack = () => {
   formWrapperEl.style.display = "flex";
   displayEl.style.display = "none";
 
   const paragraphs = displayEl.querySelectorAll(".par-container__class");
   paragraphs.forEach((paragraph) => paragraph.remove());
-
   formWrapperEl.focus();
 };
 
@@ -18,7 +21,15 @@ displayEl
   .addEventListener("click", handleGoBack);
 
 /**
- * Form actions
+ * Paragraphs
+ */
+
+const toggleCollapse = (paragraphEl) => (_) => {
+  paragraphEl && paragraphEl.classList.toggle("collapsed");
+};
+
+/**
+ * Form
  */
 
 formWrapperEl.focus();
@@ -52,17 +63,36 @@ const handleSubmit = (event) => {
           .join("\n")
       )
       .filter((paragraph) => !!paragraph)
-      .forEach((paragraph, i) => {
+      .forEach((paragraphText, i) => {
+        const paragraphLines = paragraphText
+          .split(/\n/)
+          .map(
+            (line) => `
+        <p class="par-line__class">${line}</p>`
+          )
+          .join("");
+
         const paragraphDocFrag = templateEl.content
           .cloneNode(true)
           .querySelector(".par-container__class");
 
         paragraphDocFrag.querySelector(
-          ".par-text__class"
-        ).innerHTML = paragraph;
+          ".par-lines-wrapper__class"
+        ).innerHTML = paragraphLines;
 
-        paragraphDocFrag.id = `paragraph-${i}__id`;
+        const paragraphId = `paragraph-${i}__id`;
+
+        paragraphDocFrag.id = paragraphId;
         displayEl.appendChild(paragraphDocFrag);
+
+        // todo: collapse by default if block is very long
+
+        // Get the actual DOM node now that we have attached it
+        const paragraphEl = displayEl.querySelector(`#${paragraphId}`);
+
+        paragraphEl
+          .querySelector(".collapse-btn__class")
+          .addEventListener("click", toggleCollapse(paragraphEl));
       });
 };
 

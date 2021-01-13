@@ -115,19 +115,38 @@ main {
   margin-top: 6rem;
 }
 
-.par-text__class {
+/* PARAGRAPH LINES WRAPPER */
+
+.par-lines-wrapper__class {
   width: 40%;
   min-width: 300px;
-  /* white-space: pre-line; */
-
   margin-top: 1rem;
   position: relative;
+}
+
+.collapsed > .par-lines-wrapper__class {
+  height: 3rem;
+  width: min-content;
+  overflow: hidden;
+  mix-blend-mode: hard-light;
+  position: relative;
+}
+
+.collapsed > .par-lines-wrapper__class::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 1rem;
+  height: calc(100% - 1rem);
+  width: 100%;
+  background: linear-gradient(transparent, gray);
+  pointer-events: none;
 }
 
 /* PARAGRAPH LINE STYLES */
 
 .par-line__class {
-  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* PARAGRAPH COLLAPSE BUTTON */
