@@ -6,9 +6,8 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "eleventy --serve",
-    "ntldev": "ntl dev",
-    "build": "eleventy"
+    "dev": "eleventy --watch --serve",
+    "build": "rm -rf docs && env NODE_ENV=production npx eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1"
