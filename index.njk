@@ -2,7 +2,7 @@
 layout: default.liquid
 ---
 
-<!-- Input form -->
+{# FORM #}
 <div id="form-wrapper__id" tabindex="0">
   <form id="form__id">
     <h1>text-tiler</h1>
@@ -16,7 +16,7 @@ layout: default.liquid
               id="preset-none__id"
               name="sample-input"
               value=""
-              checked
+
 />
         </li>
         <li>
@@ -26,6 +26,7 @@ layout: default.liquid
               id="preset-lyrics__id"
               name="sample-input"
               value="{{lyrics}}"
+              checked
 />
         </li>
         <li>
@@ -59,25 +60,27 @@ layout: default.liquid
         value=""
         maxlength="10000"
         autofocus
-      ></textarea>
-
+      >{{ lyrics }}</textarea>
     <button type="submit" id="submit-btn__id">Submit (ctrl + Enter)</button>
   </form>
 </div>
 
-<!-- Display paragraphs -->
+{# TILED TEXT DISPLAY #}
 <div id="display-container__id" tabindex="0">
   <div id="display-btns__id">
     <button id="back-btn__id"></button>
     <button id="view-btn__id"></button>
   </div>
 </div>
-</main>
+
+{# PARAGRAPHS #}
 <template id="par-template__id">
-<div class="par-container__class">
-  <button class="collapse-btn__class"></button>
-  <pre class="par-text__class"></pre>
-</div>
+  <div class="par-container__class">
+    <button class="collapse-btn__class"></button>
+    <div class="par-text__class">
+      {# Lines of paragraph go here #}
+    </div>
+  </div>
 </template>
 
 <script src="{{ '/js/app.js' | url }}" type="text/javascript"></script>

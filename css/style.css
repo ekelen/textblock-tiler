@@ -1,7 +1,6 @@
 /* GLOBAL STYLES */
 
 body,
-pre,
 button,
 textarea {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -99,8 +98,10 @@ main {
 }
 
 #back-btn__id::after {
-  content: "⬅ BACK (Shift + B)";
+  content: "⬅ BACK";
 }
+
+/* PARAGRAPH STYLES */
 
 .par-container__class {
   background-color: hsl(0, 0%, 95%);
@@ -117,10 +118,16 @@ main {
 .par-text__class {
   width: 40%;
   min-width: 300px;
-  white-space: pre-line;
+  /* white-space: pre-line; */
 
   margin-top: 1rem;
   position: relative;
+}
+
+/* PARAGRAPH LINE STYLES */
+
+.par-line__class {
+  margin-top: 0.5rem;
 }
 
 /* PARAGRAPH COLLAPSE BUTTON */

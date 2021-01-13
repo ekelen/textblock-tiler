@@ -63,14 +63,22 @@ const handleSubmit = (event) => {
           .join("\n")
       )
       .filter((paragraph) => !!paragraph)
-      .forEach((paragraph, i) => {
+      .forEach((paragraphText, i) => {
+        const paragraphLines = paragraphText
+          .split(/\n/)
+          .map(
+            (line) => `
+        <p class="par-line__class">${line}</p>`
+          )
+          .join("");
+
         const paragraphDocFrag = templateEl.content
           .cloneNode(true)
           .querySelector(".par-container__class");
 
         paragraphDocFrag.querySelector(
           ".par-text__class"
-        ).innerHTML = paragraph;
+        ).innerHTML = paragraphLines;
 
         const paragraphId = `paragraph-${i}__id`;
 
