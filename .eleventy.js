@@ -7,7 +7,7 @@ module.exports = (eleventyConfig) => {
     pathPrefix:
       process.env.NODE_ENV === "production" ? "/textblock-tiler/" : "/",
     dir: {
-      output: process.env.NODE_ENV === "production" ? "docs" : "_site",
+      output: process.env.NODE_ENV === "production" ? "dist" : "_site",
     },
   };
 };
