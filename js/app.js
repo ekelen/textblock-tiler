@@ -8,9 +8,9 @@ const displayEl = document.querySelector("#display-container__id");
  */
 
 const handleGoBack = () => {
-  if (window.localStorage.getItem("input")) {
-    return;
-  }
+  // if (window.localStorage.getItem("input")) {
+  //   return;
+  // }
   formWrapperEl.style.display = "flex";
   displayEl.style.display = "none";
 

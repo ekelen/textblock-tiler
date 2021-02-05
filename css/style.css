@@ -55,7 +55,7 @@ main {
   font-size: large;
   border: 0;
   border-radius: 0.25rem;
-  padding: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
   width: min-content;
   white-space: nowrap;
@@ -82,6 +82,7 @@ main {
   height: 95vh;
   max-height: 99vh;
   padding: 1rem;
+  padding-top: 5rem;
 }
 
 #display-btns__id {
@@ -113,6 +114,25 @@ main {
 
 #formatting-btns__id {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: 0.75rem;
+  font-variant: small-caps;
+  padding: 0.75rem;
+}
+
+.reading-mode #formatting-btns__id {
+  opacity: 0.5;
+}
+
+.reading-mode #view-btn__id,
+.reading-mode #back-btn__id {
+  opacity: 0.3;
+  font-weight: normal;
+  font-variant: small-caps;
+  border-width: 0;
+  font-size: 1rem;
+  padding: 0.2rem 0.3rem;
+  margin-left: 0.75rem;
 }
 
 /* PARAGRAPH STYLES */
@@ -131,9 +151,9 @@ main {
   border-left: 1px solid hsl(0, 0%, 78%);
 }
 
-.par-container__class:nth-of-type(2) {
+/* .par-container__class:nth-of-type(2) {
   margin-top: 6rem;
-}
+} */
 
 /* PARAGRAPH LINES WRAPPER */
 
