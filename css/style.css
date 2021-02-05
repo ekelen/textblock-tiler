@@ -25,6 +25,10 @@ main {
   justify-content: center;
 }
 
+#form-wrapper__id:focus {
+  outline: none;
+}
+
 #form__id {
   width: 100%;
   max-width: 768px;
@@ -83,6 +87,10 @@ main {
   max-height: 99vh;
   padding: 1rem;
   padding-top: 5rem;
+}
+
+#display-container__id:focus {
+  outline: none;
 }
 
 #display-btns__id {
