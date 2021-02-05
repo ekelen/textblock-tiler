@@ -40,6 +40,10 @@ const toggleCollapse = (paragraphEl) => (_) => {
   paragraphEl && paragraphEl.classList.toggle("collapsed");
 };
 
+const toggleBold = (paragraphEl) => (_) => {
+  paragraphEl && paragraphEl.classList.toggle("is-bold__class");
+};
+
 /**
  * Format paragraphs
  */
@@ -176,6 +180,10 @@ const handleSubmit = (event) => {
         paragraphEl
           .querySelector(".collapse-btn__class")
           .addEventListener("click", toggleCollapse(paragraphEl));
+
+        paragraphEl
+          .querySelector(".bold-btn__class")
+          .addEventListener("click", toggleBold(paragraphEl));
       });
   window.localStorage.setItem("input", input);
 };

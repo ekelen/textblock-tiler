@@ -148,6 +148,10 @@ main {
   margin-top: 0;
 }
 
+.is-bold__class > .par-lines-wrapper__class > .par-line__class {
+  font-weight: bolder;
+}
+
 .collapsed > .par-lines-wrapper__class {
   height: 3rem;
   overflow-y: hidden;
@@ -181,14 +185,16 @@ main {
 
 /* PARAGRAPH COLLAPSE BUTTON */
 
-.collapse-btn__class {
+.round-btn__class {
   font-size: x-large;
   border: 0;
   background-color: white;
   color: black;
   font-family: sans-serif;
   position: absolute;
-  display: initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -198,14 +204,32 @@ main {
   cursor: pointer;
 }
 
-.collapse-btn__class::after {
+.collapse-btn__class {
+  left: -1rem;
+}
+
+.bold-btn__class {
+  left: 1.5rem;
+}
+
+.round-btn__class::after {
   content: "-";
+}
+
+.bold-btn__class::after {
+  content: "B";
+  font-weight: bolder;
+  font-size: small;
+}
+
+.is-bold__class > .bold-btn__class::after {
+  font-weight: normal;
 }
 
 .par-container__class.collapsed > .collapse-btn__class::after {
   content: "+";
 }
 
-.reading-mode .collapse-btn__class {
+.reading-mode .round-btn__class {
   display: none;
 }
