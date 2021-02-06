@@ -2,6 +2,9 @@ const formWrapperEl = document.querySelector("#form-wrapper__id");
 const formEl = document.querySelector("#form__id");
 const textareaEl = formEl.querySelector("#textarea__id");
 const displayEl = document.querySelector("#display-container__id");
+const displayParagraphsEl = document.querySelector("#display-paragraphs__id");
+
+let selectedTextBlocks = {};
 
 /**
  * Display area
@@ -156,8 +159,8 @@ const handleSubmit = (event) => {
         const paragraphLines = paragraphText
           .split(/\n/)
           .map(
-            (line) => `
-        <p class="par-line__class">${line}</p>`
+            (line, j) => `
+        <p class="par-line__class" data-index=${j}>${line}</p>`
           )
           .join("");
 
@@ -172,10 +175,12 @@ const handleSubmit = (event) => {
         const paragraphId = `paragraph-${i}__id`;
 
         paragraphDocFrag.id = paragraphId;
-        displayEl.appendChild(paragraphDocFrag);
+        displayParagraphsEl.appendChild(paragraphDocFrag);
 
         // Get the actual DOM node now that we have attached it
-        const paragraphEl = displayEl.querySelector(`#${paragraphId}`);
+        const paragraphEl = displayParagraphsEl.querySelector(
+          `#${paragraphId}`
+        );
 
         paragraphEl
           .querySelector(".collapse-btn__class")

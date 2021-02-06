@@ -4,6 +4,7 @@ layout: default.liquid
 
 {# FORM #}
 <div id="form-wrapper__id" tabindex="0">
+  <header></header>
   <form id="form__id">
     <h1>text-tiler</h1>
     <fieldset id="preset-fieldset__id">
@@ -115,32 +116,35 @@ layout: default.liquid
 
 {# TILED TEXT DISPLAY #}
 <div id="display-container__id" tabindex="0">
-  <div id="display-btns__id">
-    <button id="back-btn__id"></button>
-    <button id="view-btn__id"></button>
-    <div id="formatting-btns__id">
-      <div class="format-btns-wrapper__class">
-        <span>Font size: </span>
-        <button id="btn-font-size-inc__id" class="btn-format__class">+</button>
-        <button id="btn-font-size-dec__id" class="btn-format__class">-</button>
-      </div>
-      <div class="format-btns-wrapper__class">
-        <span>Col width: </span>
-        <button id="btn-w-cols-inc__id" class="btn-format__class">+</button>
-        <button id="btn-w-cols-dec__id" class="btn-format__class">-</button>
-      </div>
-      <div class="format-btns-wrapper__class">
-        <span>Col min width: </span>
-        <button id="btn-minw-cols-inc__id" class="btn-format__class">+</button>
-        <button id="btn-minw-cols-dec__id" class="btn-format__class">-</button>
-      </div>
-      <div class="format-btns-wrapper__class">
-        <span># columns: </span>
-        <button id="btn-n-cols-inc__id" class="btn-format__class">+</button>
-        <button id="btn-n-cols-dec__id" class="btn-format__class">-</button>
+  <header id="display-container-header__id">
+    <div id="display-btns__id">
+      <button id="back-btn__id"></button>
+      <button id="view-btn__id"></button>
+      <div id="formatting-btns__id">
+        <div class="format-btns-wrapper__class">
+          <span>Font size: </span>
+          <button id="btn-font-size-inc__id" class="btn-format__class">+</button>
+          <button id="btn-font-size-dec__id" class="btn-format__class">-</button>
+        </div>
+        <div class="format-btns-wrapper__class">
+          <span>Col width: </span>
+          <button id="btn-w-cols-inc__id" class="btn-format__class">+</button>
+          <button id="btn-w-cols-dec__id" class="btn-format__class">-</button>
+        </div>
+        <div class="format-btns-wrapper__class">
+          <span>Col min width: </span>
+          <button id="btn-minw-cols-inc__id" class="btn-format__class">+</button>
+          <button id="btn-minw-cols-dec__id" class="btn-format__class">-</button>
+        </div>
+        <div class="format-btns-wrapper__class">
+          <span># columns: </span>
+          <button id="btn-n-cols-inc__id" class="btn-format__class">+</button>
+          <button id="btn-n-cols-dec__id" class="btn-format__class">-</button>
+        </div>
       </div>
     </div>
-  </div>
+  </header>
+  <div id="display-paragraphs__id"></div>
 </div>
 
 {# PARAGRAPHS #}
