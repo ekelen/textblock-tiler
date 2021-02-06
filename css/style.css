@@ -80,7 +80,7 @@ header > h1 {
 }
 
 #submit-btn__id {
-  border-radius: 0.25rem;
+  border-radius: 0.325rem;
   padding: 0.375rem;
   width: min-content;
 
@@ -127,8 +127,7 @@ header > h1 {
 
 #display-btns__id > button {
   background-color: hsla(0, 0%, 0%, 0);
-  /* border: 3px double hsl(0, 0%, 80%); */
-  box-shadow: 0 4px 12px 2px rgba(171, 174, 209, 0.4);
+  box-shadow: 0 4px 12px 2px hsla(235.3, 29.2%, 74.5%, 0.4);
   border-radius: 0.325rem;
   height: min-content;
   padding: 0.5rem;
@@ -155,22 +154,42 @@ header > h1 {
   content: "back";
 }
 
+.reading-mode #view-btn__id,
+.reading-mode #back-btn__id {
+  opacity: 0.3;
+}
+
 /* DISPLAY CONTROLS */
 
 #formatting-btns__id {
   display: flex;
-  flex-wrap: wrap;
   margin-left: 0.75rem;
-  padding: 0.75rem;
+  min-width: 5rem;
+  padding: 0.5rem;
+  border-radius: 0.325rem;
+  box-shadow: 0 4px 12px 2px hsla(235.3, 29.2%, 74.5%, 0.4);
 }
 
 .reading-mode #formatting-btns__id {
   opacity: 0.5;
 }
 
-.reading-mode #view-btn__id,
-.reading-mode #back-btn__id {
-  opacity: 0.3;
+.format-btns-wrapper__class {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.format-btns-wrapper__class:not(:first-child) {
+  margin-left: 0.75rem;
+}
+
+.format-btns-wrapper__class > button {
+  height: 1rem;
+  background-color: hsla(235.3, 29.2%, 74.5%, 0.4);
+  border-radius: 0.325rem;
+  margin-left: 0.325rem;
+  line-height: 0.6rem;
 }
 
 /* PARAGRAPH STYLES */
