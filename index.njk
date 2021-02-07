@@ -25,7 +25,16 @@ layout: default.liquid
 />
         </li>
         <li>
-          <label for="preset-lyrics__id">All Among the Barley (Lyrics)</label>
+          <label for="preset-recipe__id">Vegan Linzer Cookies (Recipe)</label>
+          <input
+              type="radio"
+              id="preset-recipe__id"
+              name="sample-input"
+              value="{{recipe}}"
+/>
+        </li>
+        <li>
+          <label for="preset-lyrics__id">All Among the Barley (wide lyrics)</label>
           <input
               type="radio"
               id="preset-lyrics__id"
@@ -34,15 +43,7 @@ layout: default.liquid
               checked
 />
         </li>
-        {# <li>
-          <label for="preset-recipe__id">Vegan Linzer Cookies (Recipe)</label>
-          <input
-              type="radio"
-              id="preset-recipe__id"
-              name="sample-input"
-              value="{{recipe}}"
-/>
-        </li> #}
+
         {# <li>
           <label for="preset-species__id">Swamp Spruce (Species)</label>
           <input
@@ -52,16 +53,16 @@ layout: default.liquid
               value="{{species}}"
 />
         </li> #}
-        <li>
+        {# <li>
           <label for="preset_long_lyrics__id">The House Carpenter (Long lyrics)</label>
           <input
               type="radio"
               id="preset_long_lyrics__id"
               name="sample-input"
               value="{{house_carpenter}}"
-              checked
+
 />
-        </li>
+        </li> #}
         {# <li>
           <label for="preset_short_lyrics__id">Leave Her, Johnny (Short lyrics)</label>
           <input
@@ -72,7 +73,7 @@ layout: default.liquid
 />
         </li> #}
         <li>
-          <label for="preset__si_mon_moine">Ah ! Si mon moine</label>
+          <label for="preset__si_mon_moine">Ah ! Si mon moine (SC shortcut)</label>
           <input
               type="radio"
               id="preset__si_mon_moine"
@@ -81,7 +82,7 @@ layout: default.liquid
 />
         </li>
         <li>
-          <label for="preset__golden_vanity">The Golden Vanity</label>
+          <label for="preset__golden_vanity">The Golden Vanity (long lyrics)</label>
           <input
               type="radio"
               id="preset__golden_vanity"
@@ -89,16 +90,6 @@ layout: default.liquid
               value="{{golden_vanity}}"
 />
         </li>
-        {# <li>
-          <label for="preset_wide_lyrics__id">All Among the Barley (Wide lyrics)</label>
-          <input
-              type="radio"
-              id="preset_wide_lyrics__id"
-              name="sample-input"
-              value="{{all_among_the_barley}}"
-              checked
-/>
-        </li> #}
       </ul>
 
     </fieldset>
