@@ -144,15 +144,15 @@ header > h1 {
 }
 
 #view-btn__id::after {
-  content: "reading mode";
+  content: "📖 reading mode";
 }
 
 #view-btn__id.reading-mode::after {
-  content: "editing mode";
+  content: "✏️ editing mode";
 }
 
 #back-btn__id::after {
-  content: "back";
+  content: "↩ back";
 }
 
 .reading-mode #view-btn__id,
