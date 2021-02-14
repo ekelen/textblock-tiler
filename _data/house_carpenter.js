@@ -1,55 +1,45 @@
 module.exports = `
-“Well met, well met, my own true love,
-Long time I have been absent from thee.
-I am lately come from the salt sea
-And it's all for the sake, my love, of thee.”
 
-“I have three ships all on the sea
-And by one of them has brought me to land.
-I've four and twenty seamen on board
-And you shall have music at your command.”
+THE HOUSE CARPENTER / "Demon Lover"
 
-She says, “I am now wed to a ship's carpenter,
-To a ship carpenter I am bound.
-And I wouldn't leave my husband dear
-For twice the sum of ten hundred pound.”
+Well met, well met, my own true love
+	Well met, well met, cried he
+	I've just returned from the salt, salt sea
+	All for the love of thee
 
-“Well I might have a king's daughter,
-And fain she would have married me.
-But I forsook her crown of gold
-And it was all for the sake, my love, of thee.”
+	Well I could have married the King's daughter, dear
+	She would have married me
+	But I have forsaken her crowns of gold
+	All for the love of thee
 
-“So I pray you leave your husband, dear,
-And sail away with me.
-And I'll take you where the white lilies grow
-All on the banks of Italy.”
+	Well, if you could have married the King's daughter, dear
+	I know you are to blame
+	For I am married to a house carpenter
+	And I find him a nice young man
 
-“And this ship wherein my love shall sail
-Is wondrous to behold.
-The sails shall be of shining silk
-And the mast shall be of red beaten gold.”
+	Oh, will you forsake your house carpenter
+	And go along with me?
+	I'll take you to where the grass grows green
+	To the banks of the salt, salt sea
 
-So she dressed herself in her gay clothing
-Most glorious to behold,
-And as she trod the salt water's side
-Oh she shone like glittering gold.
+	Well, if I should forsake my house carpenter
+	And go along with thee
+	What have you got to maintain me on
+	And keep me from poverty?
 
-They hadn't sailed a day and a day
-And a day but barely three,
-She cast herself down on the deck
-And she wept and wailed most bitterly.
+	Six ships, six ships all out on the sea
+	Seven more upon dry land
+	One hundred and ten all brave sailor men
+	Will be at your command
 
-“Oh hold your tongue, my dearest dear,
-Let all your sorrows be.
-I'll take you where the white lilies grow
-All on the bottom of the sea.”
+	So she picked up her own wee babe
+	Kisses she gave him three
+	Said, stay right here with my house carpenter
+	And keep him good company
 
-And as she turned herself roundabout,
-So tall and tall he seemed to be,
-Until the tops of that gallant ship
-No taller were than he.
-
-And he struck the topmast with his hand,
-The main mast with his knee,
-And he broke that shining ship in two
-And he dashed it into the bottom of the sea.`;
+	Well, they had not been gone about two weeks
+	I know it wasn't three
+	For our fair lady began to weep
+	She wept most bitterly
+	She wept most bitterly
+	She wept most bitterly`;
