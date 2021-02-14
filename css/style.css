@@ -175,6 +175,10 @@ header > h1 {
   opacity: 0.9;
 }
 
+.reading-mode h1 {
+  opacity: 0.3;
+}
+
 .format-btns-wrapper__class {
   display: flex;
   flex: 0 0 auto;
