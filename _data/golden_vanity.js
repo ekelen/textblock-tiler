@@ -2,8 +2,11 @@ module.exports = `
 The Golden Vanity
 
 It's I've got a ship in the north country,
+
 Down in the Lowlands low,
+
 And I fear she may be took by the Spanish enemy,
+
 As she sails in the Lowland sea,
 As she sails in the Lowland low.
 
@@ -54,6 +57,4 @@ Down in the Lowlands low,
 And they wrapped him up in an old cow's hide,
 And they sunk him in the Lowland sea,
 And sunk him in the Lowlands low.
-
-W. Bolton of Southport, Lancashire, sang The Golden Vanity in 1906 to Ann Gilchrist [VWML RoudFS/S146425] . In some versions of this widespread and well-known ballad with many versions, the enemy is Turkish, Spanish or French. Fundamentally, it is a story of betrayal and rarely does it have a happy ending. Sometimes the boy drowns and his ghost returns to sink his own ship. Mr Bolton explained that the “black bear skin” was the cabin boy's covering at night; he wished to wear it as a disguise in the water. Version have been reported from Wiltshire and Cornwall, some cite the hero as being Sir Walter Raleigh.
 `;
