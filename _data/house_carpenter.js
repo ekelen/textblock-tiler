@@ -1,8 +1,8 @@
 module.exports = `
 
-THE HOUSE CARPENTER / "Demon Lover"
+THE HOUSE CARPENTER
 
-Well met, well met, my own true love
+	Well met, well met, my own true love
 	Well met, well met, cried he
 	I've just returned from the salt, salt sea
 	All for the love of thee
