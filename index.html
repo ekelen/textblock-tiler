@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="/textblock-tiler/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>textblock tiler</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/textblock-tiler/css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/textblock-tiler/css/style.css"
+    />
+  </head>
+  <body>
+    <main>
+      
+<!-- FORM -->
+<div id="form-wrapper__id" tabindex="0">
+  <header>
+    <h1>
+      <a href="/">🔳</a>
+      <h1>textblock tiler</h1>
+    </h1>
+  </header>
+  <form id="form__id">
+    <fieldset id="preset-fieldset__id">
+      <legend>Use sample input:</legend>
+      <ul>
+        <li>
+          <label for="preset-none__id">None</label>
+          <input
+            type="radio"
+            id="preset-none__id"
+            name="sample-input"
+            value=""
+          />
+        </li>
+        <!-- <li>
+          <label for="preset-recipe__id">Vegan Linzer Cookies (Recipe)</label>
+          <input
+            type="radio"
+            id="preset-recipe__id"
+            name="sample-input"
+            value="
+VEGAN LINZER COOKIES
+
+Ingredients
+
+    250 g (2.1 cups) flour
+    50 g (1.7 oz) ground almonds
+    200 g (0.8 cups) plant-based butter
+    100 g (0.5 cups) sugar
+    a pinch of salt
+    if needed: cold water
+    150 g (5.3 oz) raspberry jam (seedless)
+    50 g (0.5 cups) icing sugar
+
+Instructions
+
+    Add flour, ground almonds, sugar, and salt to a bowl and stir to combine.
+    Add diced cold plant-based butter on top. Start kneading with cold hands.
+    If needed, add cold water and knead until a smooth dough forms.
+    Wrap in plastic wrap and let rest in the fridge for at least 30 minutes.
+    Roll out the dough on a floured surface and cut out rounds. Use a smaller cutter to make a hole in the center of some rounds. In the end, you should get approx. Twenty-five rounds (the bottom of the cookies) and 25 rings (the top of the cookies). Place all of them on a baking tray covered with baking parchment.
+    Pre-heat the oven up to 180°C/356°F and bake cookies for 8-10 minutes. Allow to cool down for 10 minutes.
+    In the meantime heat the raspberry jam in a small pot.
+	Spoon 1/2 teaspoon of the raspberry jam into the center of the round. Top with a cookies ring and sprinkle the cookies with icing sugar.
+
+	Credit:
+	Zucker & Jagdwurst
+	https://www.zuckerjagdwurst.com/en/recipes/vegan-linzer-cookies"
+          />
+        </li> -->
+        <li>
+          <label for="preset-lyrics__id"
+            >All Among the Barley (wide lyrics)</label
+          >
+          <input
+            type="radio"
+            id="preset-lyrics__id"
+            name="sample-input"
+            value="
+ALL AMONG THE BARLEY
+
+Now is come September, the hunter's moon begun
+And through the wheaten stubble is heard the frequent gun
+The leaves are pale and yellow, and kindling into red
+And the ripe and bearded barley is hanging down its head
+
+All among the barley, who would not be blithe
+When the ripe and bearded barley is smiling on the scythe
+
+The spring is like a young man who does not know his mind
+The summer is a tyrant of most ungracious kind
+The autumn's like an old friend, who loves one all she can
+And she brings the bearded barley to glad the heart of man
+
+The wheat is like a rich man, it's sleek and well-to-do
+The oats are like a pack of girls, laughing and dancing too
+The rye is like a miser, it's sulky, lean, and small
+And the ripe and bearded barley is monarch of them all
+
+Now is come September, the hunter's moon begun
+And through the wheaten stubble is heard the frequent gun
+The leaves are pale and yellow, and kindling into red
+And the ripe and bearded barley is hanging down its head"
+            checked
+          />
+        </li>
+
+        <!-- <li>
+          <label for="preset-species__id">Swamp Spruce (Species)</label>
+          <input
+              type="radio"
+              id="preset-species__id"
+              name="sample-input"
+              value="_Picea Mariana, B. S. P. (including Picea brevifolia, Peck)._
+
+BLACK SPRUCE. SWAMP SPRUCE. DOUBLE SPRUCE. WATER SPRUCE.
+
+=Habitat and Range.=--Swamps, sphagnum bogs, shores of rivers and ponds,
+wet, rocky hillsides; not uncommon, especially northward, on dry uplands
+and mountain slopes.
+
+     Labrador, Newfoundland, and Nova Scotia, westward beyond the Rocky
+     mountains, extending northward along the tributaries of the Yukon
+     in Alaska.
+
+Maine,--common throughout, covering extensive areas almost to the
+exclusion of other trees in the central and northern sections,
+occasional on the top of Katahdin (5215 feet); New Hampshire and
+Vermont,--common in sphagnum swamps of low and high altitudes; the dwarf
+form, var. _semi-prostrata_, occurs on the summit of Mt. Mansfield
+(_Flora of Vermont_, 1900); Massachusetts,--frequent; Rhode Island,--not
+reported; Connecticut,--rare; on north shore of Spectacle ponds in Kent
+(Litchfield county), at an elevation of 1200 feet; Newton (Fairfield
+county), a few scattered trees in a swamp at an altitude of 400 feet:
+(New Haven county) a few small trees at Bethany; at Middlebury abundant
+in a swamp of five acres (E. B. Harger, _Rhodora_, II, 126).
+
+     South along the mountains to North Carolina and Tennessee; west
+     through the northern tier of states to Minnesota.
+
+=Habit.=--In New England, usually a small, slender tree, 10-30 feet high
+and 5-8 inches in diameter; attaining northward and westward much
+greater dimensions; reduced at high elevation to a shrub or dwarf tree,
+2 or 3 feet high; trunk tapering very slowly, forming a narrow-based,
+conical, more or less irregular head; branches rather short, scarcely
+whorled, horizontal or more frequently declining with an upward tendency
+at the ends, often growing in open swamps almost to the ground, the
+lowest prostrate, sometimes rooting at their tips and sending up shoots;
+spray stiff and rather slender; foliage dark bluish-green or glaucous.
+This tree often begins to blossom after attaining a height of 2-5 feet,
+the terminal cones each season remaining persistent at the base of the
+branches, sometimes for many years.
+
+=Bark.=--Bark of trunk grayish-brown, separating into rather close, thin
+scales; branchlets roughened with the footstalks of the fallen leaves;
+twigs in autumn dull reddish-brown with a minute, erect, pale, rusty
+pubescence, or nearly smooth.
+
+=Winter Buds and Leaves.=--Buds scaly, ovate, pointed, reddish-brown.
+Leaves scattered, needle-shaped, dark bluish-green, the upper sides
+becoming yellowish in the sunlight, the faces marked by parallel rows of
+minute bluish dots which sometimes give a glaucous effect to the lower
+surface or even the whole leaf on the new shoots, 4-angled, 1/4-3/4 of
+an inch long, straight or slightly incurved, blunt at the apex, abruptly
+tipped or mucronate, sessile on persistent, decurrent footstalks.
+
+=Inflorescence.=--April to May, a week or two earlier than the red
+spruce; sterile flowers terminal or axillary, on wood of the preceding
+year; about 3/8 inch long, ovate; anthers madder-red: fertile flowers at
+or near end of season's shoots, erect; scales madder-red, spirally
+imbricated, broader than long, margin erose, rarely entire.
+
+=Fruit.=--Cones, single or clustered at or near ends of the season's
+shoots, attached to the upper side of the twig, but turning downward by
+the twisting of the stout stalk, often persistent for years; 1/2-1-1/2
+inches long; purplish or grayish brown at the end of the first season,
+finally becoming dull reddish or grayish brown, ovate, ovate-oval, or
+nearly globular when open; scales rigid, thin, reddish on the inner
+surface; margin rounded, uneven, eroded, bifid, or rarely entire.
+
+=Horticultural Value.=--Best adapted to cool, moist soils; of little
+value under cultivation; young plants seldom preserving the broad-based,
+cone-like, symmetrical heads common in the spruce swamps, the lower
+branches dying out and the whole tree becoming scraggly and unsightly.
+Seldom offered by nurserymen.
+
+Title: Handbook of the Trees of New England
+
+Author: Lorin Low Dame
+        Henry Brooks
+
+Release Date: January 28, 2007 [EBook #20467]
+
+Language: English
+
+
+*** START OF THIS PROJECT GUTENBERG EBOOK TREES OF NEW ENGLAND ***
+
+
+
+
+Produced by Juliet Sutherland, Janet Blenkinship, Joyce
+Wilson and the Online Distributed Proofreading Team at
+http://www.pgdp.net"
+/>
+        </li> -->
+        <li>
+          <label for="preset_long_lyrics__id"
+            >The House Carpenter (FAO Shortcut)</label
+          >
+          <input
+            type="radio"
+            id="preset_long_lyrics__id"
+            name="sample-input"
+            value="
+
+THE HOUSE CARPENTER
+
+	Well met, well met, my own true love
+	Well met, well met, cried he
+	I've just returned from the salt, salt sea
+	All for the love of thee
+
+	Well I could have married the King's daughter, dear
+	She would have married me
+	But I have forsaken her crowns of gold
+	All for the love of thee
+
+	Well, if you could have married the King's daughter, dear
+	I know you are to blame
+	For I am married to a house carpenter
+	And I find him a nice young man
+
+	Oh, will you forsake your house carpenter
+	And go along with me?
+	I'll take you to where the grass grows green
+	To the banks of the salt, salt sea
+
+	Well, if I should forsake my house carpenter
+	And go along with thee
+	What have you got to maintain me on
+	And keep me from poverty?
+
+	Six ships, six ships all out on the sea
+	Seven more upon dry land
+	One hundred and ten all brave sailor men
+	Will be at your command
+
+	So she picked up her own wee babe
+	Kisses she gave him three
+	Said, stay right here with my house carpenter
+	And keep him good company
+
+	Well, they had not been gone about two weeks
+	I know it wasn't three
+	For our fair lady began to weep
+	She wept most bitterly
+	She wept most bitterly
+	She wept most bitterly"
+          />
+        </li>
+        <!-- <li>
+          <label for="preset_short_lyrics__id">Leave Her, Johnny (Short lyrics)</label>
+          <input
+              type="radio"
+              id="preset_short_lyrics__id"
+              name="sample-input"
+              value="
+Oh, times are bad and wages are low,
+    Leave her, Johnny, leave her!
+I dare say it's time for us to go,
+    It's time for us to leave her!
+
+For there's Liverpool Pat in his tarpaulin hat
+And Yankee John the packet rat.
+
+Oh, mahogany beef and weevil bread,
+We wish old Leatherface was dead.
+
+Oh, I pray that I shall never see
+A hungry ship the likes of she.
+
+Oh, don't you hear our old man say,
+Tomorrow you will get your pay.
+
+Oh, she would neither win nor wear,
+She's parted all her running gear."
+/>
+        </li> -->
+        <li>
+          <label for="preset__si_mon_moine"
+            >Ah ! Si mon moine (SC shortcut)</label
+          >
+          <input
+            type="radio"
+            id="preset__si_mon_moine"
+            name="sample-input"
+            value="
+
+Ah ! Si mon moine
+
+Ah! Si mon moine voulait danser
+Ah! Si mon moine voulait danser
+Un chapelet je lui donnerais
+Un chapelet je lui donnerais
+
+Chorus:
+Danse mon moine danse !
+Tu n'entends pas la danse !
+Tu n'entends pas mon moulin lon la
+Tu n'entends pas mon moulin marcher
+Tu n'entends pas mon moulin lon la
+Tu n'entends pas mon moulin marcher
+
+Ah! Si mon moine voulait danser
+Ah! Si mon moine voulait danser
+Un ceinturon je lui donnerais
+Un ceinturon je lui donnerais
+
+Ah! Si mon moine voulait danser
+Ah! Si mon moine voulait danser
+Un capuchon je lui donnerais
+Un capuchon je lui donnerais
+
+S'il n'avait fait voeu de pauvreté
+S'il n'avait fait voeu de pauvreté
+Bien d'autres je lui donnerais
+Bien d'autres je lui donnerais
+"
+          />
+        </li>
+        <li>
+          <label for="preset__golden_vanity"
+            >The Golden Vanity (FAO shortcut)</label
+          >
+          <input
+            type="radio"
+            id="preset__golden_vanity"
+            name="sample-input"
+            value="
+The Golden Vanity
+
+It's I've got a ship in the north country,
+
+Down in the Lowlands low,
+
+And I fear she may be took by the Spanish enemy,
+
+As she sails in the Lowland sea,
+As she sails in the Lowland low.
+
+And up then stepped a little cabin boy,
+Down in the Lowlands low,
+Saying: “What will you give me if I do them destroy
+And sink them in the Lowland sea
+And sink them in the Lowlands low?”
+
+“Oh, I'll give you silver and likewise gold,
+Down in the Lowlands low,
+And my only daughter for to be your bride,
+If you'll sink them in the Lowland sea,
+If you'll sink them in the Lowlands low.”
+
+“Oh wrap me up in my black bear skin,
+Down in the Lowlands low,
+And heave me overboard for to sink or to swim,
+And I'll sink them in the Lowland sea
+I'll sink them in the Lowlands low.
+
+Now some were playing cards and others playing dice,
+Down in the Lowlands low,
+And the boy he had an auger, bored two holes at once,
+And he sunk them in the Lowland sea,
+And he sunk them in the Lowlands low.
+
+He leaned upon his breast and he swam back again,
+Down in the Lowlands low,
+Saying “Master, take me up, for I'm sure I will be slain,
+And I've sunk them in the Lowland sea,
+And I've sunk them in the Lowlands low.
+
+“Oh, I'll not take you up,” the master he cried,
+Down in the Lowlands low,
+“But I'll shoot you and I'll kill you and send you with the tide,
+And I'll drown you in the Lowland sea,
+And I'll drown you in the Lowlands low.”
+
+He leaned upon his breast and swam round the larboard side,
+Down in the Lowlands low,
+“Oh messmates, take me up for I fear I will been slain,
+And I've sunk her in the Lowland sea,
+And I've sunk her in the Lowlands low.”
+
+His messmates took him up, and on the deck he died,
+Down in the Lowlands low,
+And they wrapped him up in an old cow's hide,
+And they sunk him in the Lowland sea,
+And sunk him in the Lowlands low.
+"
+          />
+        </li>
+      </ul>
+    </fieldset>
+    <label for="textarea__id"></label>
+    <textarea
+      required
+      id="textarea__id"
+      name="raw-text"
+      rows="15"
+      cols="30"
+      placeholder="Type or paste some paragraphs, each seperated by an empty line."
+      value=""
+      maxlength="10000"
+      autofocus
+      >
+All Among the Barley
+
+Come out, 'tis now September, the hunters' moon's begun,
+And through the wheaten stubble we hear the frequent gun;
+The leaves are turning yellow, and fading into red,
+While the ripe and bearded barley is hanging down its head.
+
+Chorus (repeated after each verse):
+All among the barley, who would not be blithe,
+While the ripe and bearded barley is smiling on the scythe.
+
+The wheat is like a rich man, it's sleek and well-to-do;
+The oats are like a pack of girls, they're thin and dancing too;
+The rye is like a miser, both sulky, lean and small,
+Whilst the ripe and bearded barley is the monarch of them all.
+
+The spring is like a young maid that does not know her mind,
+The summer is a tyrant of most ungracious kind;
+The autumn is an old friend that pleases all he can,
+And brings the bearded barley to glad the heart of man.
+</textarea
+    >
+    <button type="submit" id="submit-btn__id">Submit (ctrl + Enter)</button>
+  </form>
+</div>
+
+<!-- {# TILED TEXT DISPLAY #} -->
+<div id="display-container__id" tabindex="0">
+  <header id="display-container-header__id">
+    <h1>
+      <a href="/">🔳</a>
+      <h1>text-tiler</h1>
+    </h1>
+    <div id="display-btns__id">
+      <button id="back-btn__id"></button>
+      <button id="view-btn__id"></button>
+      <div id="formatting-btns__id">
+        <div class="format-btns-wrapper__class">
+          <label>Font size: </label>
+          <button
+            aria-label="increase font size"
+            id="btn-font-size-inc__id"
+            class="btn-format__class"
+          >
+            +
+          </button>
+          <button
+            aria-label="decrease font size"
+            id="btn-font-size-dec__id"
+            class="btn-format__class"
+          >
+            -
+          </button>
+        </div>
+        <div class="format-btns-wrapper__class">
+          <label>Column width:</label>
+          <button
+            aria-label="increase colwidth"
+            id="btn-w-cols-inc__id"
+            class="btn-format__class"
+          >
+            +
+          </button>
+          <button
+            aria-label="decrease colwidth"
+            id="btn-w-cols-dec__id"
+            class="btn-format__class"
+          >
+            -
+          </button>
+        </div>
+        <div class="format-btns-wrapper__class">
+          <label>Col min width: </label>
+          <button
+            aria-label="increase col min width"
+            id="btn-minw-cols-inc__id"
+            class="btn-format__class"
+          >
+            +
+          </button>
+          <button
+            aria-label="decrease col min width"
+            id="btn-minw-cols-dec__id"
+            class="btn-format__class"
+          >
+            -
+          </button>
+        </div>
+        <!-- {# <div class="format-btns-wrapper__class">
+          <label id=""># columns: </label id="">
+          <button id="btn-n-cols-inc__id" class="btn-format__class">+</button>
+          <button id="btn-n-cols-dec__id" class="btn-format__class">-</button>
+        </div> #} -->
+      </div>
+    </div>
+  </header>
+  <div id="display-paragraphs__id"></div>
+</div>
+
+<!-- {# PARAGRAPHS #} -->
+<template id="par-template__id">
+  <div class="par-container__class">
+    <button class="round-btn__class collapse-btn__class"></button>
+    <button class="round-btn__class bold-btn__class"></button>
+    <div class="par-lines-wrapper__class">
+      <!-- {# Lines of paragraph go here #} -->
+    </div>
+  </div>
+</template>
+
+<script src="/textblock-tiler/js/app.js" type="text/javascript"></script>
+
+    </main>
+  </body>
+</html>
